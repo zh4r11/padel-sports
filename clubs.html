@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Clubs & Courts Near You - Find Places to Play | PadelSport</title>
+    <meta name="description" content="Find Padel clubs, courts, and facilities near you. Discover the best places to play Padel with location details, amenities, and contact information.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PadelSport</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Padel</a></li>
+                <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+                <li><a href="clubs.html" class="nav-link active">Clubs & Locations</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1 class="hero-title">Find Padel Courts</h1>
+                    <p class="hero-subtitle">
+                        Discover amazing Padel clubs and courts near you. Join the growing community 
+                        of players and find your perfect place to play.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="card fade-in" style="max-width: 600px; margin: 0 auto;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">
+                        Find Courts Near You
+                    </h3>
+                    <form style="display: grid; gap: 1rem;">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Enter your city or zip code" 
+                                   style="text-align: center; font-size: 1.1rem;">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <select class="form-input">
+                                <option value="">Court Type</option>
+                                <option value="indoor">Indoor Courts</option>
+                                <option value="outdoor">Outdoor Courts</option>
+                                <option value="both">Both</option>
+                            </select>
+                            <select class="form-input">
+                                <option value="">Distance</option>
+                                <option value="5">Within 5 miles</option>
+                                <option value="10">Within 10 miles</option>
+                                <option value="25">Within 25 miles</option>
+                                <option value="50">Within 50 miles</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="justify-self: center; padding: 12px 40px;">
+                            🔍 Search Courts
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Clubs Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Featured Padel Clubs</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in">
+                        <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
+                                    height: 200px; border-radius: var(--border-radius); margin-bottom: 1.5rem; 
+                                    display: flex; align-items: center; justify-content: center; color: var(--white); 
+                                    font-size: 3rem;">🏟️</div>
+                        <h3 class="card-title">Metro Padel Center</h3>
+                        <p style="color: var(--text-light); margin-bottom: 1rem;">
+                            📍 Downtown Athletic District<br>
+                            📞 (555) 123-4567<br>
+                            🌐 www.metropadel.com
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--primary-color);">Features:</strong>
+                            <ul style="color: var(--text-light); margin-top: 0.5rem; line-height: 1.6;">
+                                <li>• 8 Indoor Courts with Climate Control</li>
+                                <li>• Professional Coaching Available</li>
+                                <li>• Equipment Rental & Pro Shop</li>
+                                <li>• Lounge Area & Refreshments</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <span style="background: var(--primary-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Indoor</span>
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Coaching</span>
+                            <span style="background: var(--accent-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Pro Shop</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div style="background: linear-gradient(45deg, var(--secondary-color), var(--primary-color)); 
+                                    height: 200px; border-radius: var(--border-radius); margin-bottom: 1.5rem; 
+                                    display: flex; align-items: center; justify-content: center; color: var(--white); 
+                                    font-size: 3rem;">🌞</div>
+                        <h3 class="card-title">Sunshine Padel Resort</h3>
+                        <p style="color: var(--text-light); margin-bottom: 1rem;">
+                            📍 Riverside Park Area<br>
+                            📞 (555) 234-5678<br>
+                            🌐 www.sunshinepadel.com
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--primary-color);">Features:</strong>
+                            <ul style="color: var(--text-light); margin-top: 0.5rem; line-height: 1.6;">
+                                <li>• 12 Outdoor Courts with Lighting</li>
+                                <li>• Tournament Hosting Facilities</li>
+                                <li>• Restaurant & Social Area</li>
+                                <li>• Kids Programs & Summer Camps</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Outdoor</span>
+                            <span style="background: var(--primary-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Tournament</span>
+                            <span style="background: var(--accent-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Kids Program</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div style="background: linear-gradient(90deg, var(--accent-color), var(--secondary-color)); 
+                                    height: 200px; border-radius: var(--border-radius); margin-bottom: 1.5rem; 
+                                    display: flex; align-items: center; justify-content: center; color: var(--white); 
+                                    font-size: 3rem;">🏢</div>
+                        <h3 class="card-title">Elite Padel Academy</h3>
+                        <p style="color: var(--text-light); margin-bottom: 1rem;">
+                            📍 Sports Complex North<br>
+                            📞 (555) 345-6789<br>
+                            🌐 www.elitepadel.com
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: var(--primary-color);">Features:</strong>
+                            <ul style="color: var(--text-light); margin-top: 0.5rem; line-height: 1.6;">
+                                <li>• 6 Premium Indoor Courts</li>
+                                <li>• Elite Coaching & Training Programs</li>
+                                <li>• Fitness Center & Recovery Room</li>
+                                <li>• Corporate Memberships Available</li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <span style="background: var(--accent-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Premium</span>
+                            <span style="background: var(--primary-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Elite Training</span>
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 4px 8px; 
+                                         border-radius: 12px; font-size: 0.8rem;">Fitness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club Types Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title fade-in">Types of Padel Facilities</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in">
+                        <div class="card-icon">🏢</div>
+                        <h3 class="card-title">Dedicated Padel Centers</h3>
+                        <p class="card-text">
+                            Purpose-built facilities focusing exclusively on Padel. Usually offer the best court 
+                            quality, professional coaching, and specialized services for Padel players.
+                        </p>
+                        <div style="margin-top: 1rem;">
+                            <strong style="color: var(--primary-color);">Typical Features:</strong>
+                            <ul style="color: var(--text-light); margin-top: 0.5rem; line-height: 1.6;">
+                                <li>• Multiple high-quality courts</li>
+                                <li>• Professional coaching staff</li>
+                                <li>• Equipment sales and rental</li>
+                                <li>• Tournament organization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">🎾</div>
+                        <h3 class="card-title">Tennis & Racquet Clubs</h3>
+                        <p class="card-text">
+                            Traditional tennis clubs that have added Padel courts. Great for players who enjoy 
+                            multiple racquet sports and want access to diverse facilities and social activities.
+                        </p>
+                        <div style="margin-top: 1rem;">
+                            <strong style="color: var(--primary-color);">Typical Features:</strong>
+                            <ul style="color: var(--text-light); margin-top: 0.5rem; line-height: 1.6;">
+                                <li>• Multi-sport facilities</li>
+                                <li>• Established social programs</li>
+                                <li>• Dining and event spaces</li>
+                                <li>• Family-friendly atmosphere</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">🏋️</div>
+                        <h3 class="card-title">Fitness & Sports Centers</h3>
+                        <p class="card-text">
+                            Comprehensive fitness centers with Padel courts as part of their sports offering. 
+                            Perfect for those who want to combine Padel with gym workouts and other fitness activities.
+                        </p>
+                        <div style="margin-top: 1rem;">
+                            <strong style="color: var(--primary-color);">Typical Features:</strong>
+                            <ul style="color: var(--text-light); margin-top: 0.5rem; line-height: 1.6;">
+                                <li>• Gym and fitness classes</li>
+                                <li>• Swimming pools</li>
+                                <li>• Personal training services</li>
+                                <li>• Comprehensive wellness programs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- City Directory Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Padel by City</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">🏙️ Major Cities</h3>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">New York City</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">45+ courts across Manhattan, Brooklyn, and Queens</p>
+                                <span style="color: var(--primary-color); font-size: 0.9rem;">📍 15 clubs • 🎾 Indoor & Outdoor</span>
+                            </div>
+                            
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Los Angeles</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">60+ courts throughout LA County</p>
+                                <span style="color: var(--primary-color); font-size: 0.9rem;">📍 18 clubs • 🌞 Mostly Outdoor</span>
+                            </div>
+                            
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Miami</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">35+ courts in Miami-Dade area</p>
+                                <span style="color: var(--primary-color); font-size: 0.9rem;">📍 12 clubs • ☀️ Year-round Outdoor</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <h3 style="color: var(--secondary-color); margin-bottom: 1.5rem;">🌆 Growing Markets</h3>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Austin</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">Rapidly expanding with 8 new clubs opening</p>
+                                <span style="color: var(--secondary-color); font-size: 0.9rem;">📍 6 clubs • 🔥 Hot Market</span>
+                            </div>
+                            
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Denver</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">Growing mountain region community</p>
+                                <span style="color: var(--secondary-color); font-size: 0.9rem;">📍 4 clubs • ⛰️ Indoor Focus</span>
+                            </div>
+                            
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Seattle</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">Pacific Northwest's padel hub</p>
+                                <span style="color: var(--secondary-color); font-size: 0.9rem;">📍 5 clubs • 🏢 Indoor Courts</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">🌟 Emerging Areas</h3>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Phoenix</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">Desert climate perfect for year-round play</p>
+                                <span style="color: var(--accent-color); font-size: 0.9rem;">📍 3 clubs • 🌵 Desert Padel</span>
+                            </div>
+                            
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Nashville</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">Music City embracing Padel culture</p>
+                                <span style="color: var(--accent-color); font-size: 0.9rem;">📍 2 clubs • 🎵 Growing Scene</span>
+                            </div>
+                            
+                            <div style="padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Atlanta</h4>
+                                <p style="color: var(--text-light); margin-bottom: 0.5rem;">Southern hospitality meets Padel passion</p>
+                                <span style="color: var(--accent-color); font-size: 0.9rem;">📍 4 clubs • 🍑 New Market</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What to Expect Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title fade-in">What to Expect at Your First Visit</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">Before You Go</h3>
+                        <ul style="color: var(--text-light); line-height: 1.8;">
+                            <li>• Call ahead to check court availability</li>
+                            <li>• Ask about equipment rental options</li>
+                            <li>• Inquire about beginner-friendly sessions</li>
+                            <li>• Check dress code and facility rules</li>
+                            <li>• Ask about trial memberships or day passes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">👋</div>
+                        <h3 class="card-title">Upon Arrival</h3>
+                        <ul style="color: var(--text-light); line-height: 1.8;">
+                            <li>• Check in at reception desk</li>
+                            <li>• Get a brief facility tour</li>
+                            <li>• Learn about booking systems</li>
+                            <li>• Meet other players and staff</li>
+                            <li>• Take note of amenities available</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">🎾</div>
+                        <h3 class="card-title">Playing Tips</h3>
+                        <ul style="color: var(--text-light); line-height: 1.8;">
+                            <li>• Start with a coach or experienced player</li>
+                            <li>• Focus on having fun, not perfect technique</li>
+                            <li>• Ask questions about rules and strategy</li>
+                            <li>• Take breaks and stay hydrated</li>
+                            <li>• Exchange contacts with new playing partners</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership & Pricing Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Membership Options & Pricing</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in" style="border: 2px solid var(--secondary-color);">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <h3 style="color: var(--secondary-color); font-size: 1.5rem;">Drop-In Play</h3>
+                            <div style="font-size: 2.5rem; font-weight: bold; color: var(--text-dark);">$25-45</div>
+                            <p style="color: var(--text-light);">Per court hour</p>
+                        </div>
+                        <ul style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+                            <li>• Perfect for trying out the sport</li>
+                            <li>• No commitment required</li>
+                            <li>• Peak and off-peak pricing</li>
+                            <li>• Equipment rental usually available</li>
+                        </ul>
+                        <div style="text-align: center;">
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 6px 12px; 
+                                         border-radius: 20px; font-size: 0.9rem;">Great for Beginners</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in" style="border: 2px solid var(--primary-color);">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <h3 style="color: var(--primary-color); font-size: 1.5rem;">Monthly Membership</h3>
+                            <div style="font-size: 2.5rem; font-weight: bold; color: var(--text-dark);">$89-149</div>
+                            <p style="color: var(--text-light);">Per month</p>
+                        </div>
+                        <ul style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+                            <li>• Unlimited court access during off-peak</li>
+                            <li>• Discounted peak hour rates</li>
+                            <li>• Access to group activities</li>
+                            <li>• Guest passes included</li>
+                        </ul>
+                        <div style="text-align: center;">
+                            <span style="background: var(--primary-color); color: var(--white); padding: 6px 12px; 
+                                         border-radius: 20px; font-size: 0.9rem;">Most Popular</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in" style="border: 2px solid var(--accent-color);">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <h3 style="color: var(--accent-color); font-size: 1.5rem;">Annual Membership</h3>
+                            <div style="font-size: 2.5rem; font-weight: bold; color: var(--text-dark);">$899-1499</div>
+                            <p style="color: var(--text-light);">Per year</p>
+                        </div>
+                        <ul style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">
+                            <li>• Unlimited court access anytime</li>
+                            <li>• Priority booking privileges</li>
+                            <li>• Coaching discounts</li>
+                            <li>• Tournament entry included</li>
+                        </ul>
+                        <div style="text-align: center;">
+                            <span style="background: var(--accent-color); color: var(--white); padding: 6px 12px; 
+                                         border-radius: 20px; font-size: 0.9rem;">Best Value</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; text-align: center;">
+                    <p style="color: var(--text-light); font-style: italic;">
+                        *Prices vary by location and facility amenities. Contact clubs directly for current rates and special offers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+            <div class="container">
+                <div class="text-center fade-in" style="color: var(--white);">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Start Your Padel Journey Today!</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Find a club near you and experience the excitement of Padel. Whether you're a complete beginner 
+                        or looking to improve your game, there's a perfect place waiting for you.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn" style="background-color: var(--white); color: var(--primary-color);">Contact Us for Help</a>
+                        <a href="gallery.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">See Courts in Action</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PadelSport</h3>
+                    <p>Your gateway to the exciting world of Padel. Discover courts, equipment, and join the global Padel community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Padel</a>
+                    <a href="equipment.html">Equipment Guide</a>
+                    <a href="clubs.html">Find Courts</a>
+                    <a href="gallery.html">Photo Gallery</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#">Rules & Regulations</a>
+                    <a href="#">Training Tips</a>
+                    <a href="#">Tournament Calendar</a>
+                    <a href="#">Coaching Directory</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@padelsport.com</p>
+                    <p>📞 +1 (555) 123-PADEL</p>
+                    <p>📍 123 Sports Lane<br>Athletic City, AC 12345</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PadelSport. All rights reserved. | Designed with ❤️ for Padel enthusiasts worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

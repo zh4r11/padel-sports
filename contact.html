@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get in Touch with PadelSport | Questions & Support</title>
+    <meta name="description" content="Contact PadelSport for questions, court recommendations, equipment advice, or partnership opportunities. We're here to help you with all things Padel.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PadelSport</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Padel</a></li>
+                <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+                <li><a href="clubs.html" class="nav-link">Clubs & Locations</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1 class="hero-title">Contact Us</h1>
+                    <p class="hero-subtitle">
+                        Have questions about Padel? Need help finding courts or choosing equipment? 
+                        We're here to help you on your Padel journey.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-form-grid">
+                    
+                    <!-- Contact Form -->
+                    <div class="fade-in">
+                        <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 2rem;">Send us a Message</h2>
+                        
+                        <form id="contactForm" style="display: grid; gap: 1.5rem;">
+                            <div class="form-inline-group">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Please select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="courts">Find Courts Near Me</option>
+                                    <option value="equipment">Equipment Recommendations</option>
+                                    <option value="coaching">Coaching & Lessons</option>
+                                    <option value="tournaments">Tournament Information</option>
+                                    <option value="partnership">Business Partnership</option>
+                                    <option value="media">Media & Press</option>
+                                    <option value="support">Technical Support</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location" class="form-label">Your Location (City, State/Country)</label>
+                                <input type="text" id="location" name="location" class="form-input" 
+                                       placeholder="e.g., Miami, Florida">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="experience" class="form-label">Padel Experience Level</label>
+                                <select id="experience" name="experience" class="form-input">
+                                    <option value="">Select your level</option>
+                                    <option value="never-played">Never played Padel</option>
+                                    <option value="beginner">Beginner (< 6 months)</option>
+                                    <option value="intermediate">Intermediate (6 months - 2 years)</option>
+                                    <option value="advanced">Advanced (2+ years)</option>
+                                    <option value="professional">Professional/Competitive</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" 
+                                          placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin: 1rem 0;">
+                                <input type="checkbox" id="newsletter" name="newsletter" 
+                                       style="width: auto; margin: 0;">
+                                <label for="newsletter" style="color: var(--text-light); margin: 0;">
+                                    I'd like to receive Padel news and updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" 
+                                    style="padding: 15px 30px; font-size: 1.1rem; justify-self: start;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="fade-in">
+                        <h2 style="color: var(--text-dark); margin-bottom: 2rem; font-size: 2rem;">Get in Touch</h2>
+                        
+                        <div style="display: grid; gap: 2rem;">
+                            <div class="card">
+                                <div class="card-icon">📧</div>
+                                <h3 class="card-title">Email Us</h3>
+                                <p style="color: var(--text-light); margin-bottom: 1rem;">
+                                    For general inquiries, equipment questions, or partnership opportunities.
+                                </p>
+                                <div style="color: var(--primary-color);">
+                                    <strong>General:</strong> info@padelsport.com<br>
+                                    <strong>Equipment:</strong> gear@padelsport.com<br>
+                                    <strong>Business:</strong> partnerships@padelsport.com<br>
+                                    <strong>Media:</strong> press@padelsport.com
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-icon">📞</div>
+                                <h3 class="card-title">Call Us</h3>
+                                <p style="color: var(--text-light); margin-bottom: 1rem;">
+                                    Speak directly with our Padel experts. Available Monday-Friday, 9 AM - 6 PM EST.
+                                </p>
+                                <div style="color: var(--primary-color);">
+                                    <strong>Main Line:</strong> +1 (555) 123-PADEL<br>
+                                    <strong>Equipment Help:</strong> +1 (555) 123-GEAR<br>
+                                    <strong>Court Finder:</strong> +1 (555) 123-PLAY
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-icon">📍</div>
+                                <h3 class="card-title">Visit Us</h3>
+                                <p style="color: var(--text-light); margin-bottom: 1rem;">
+                                    Come see us at our headquarters and demo center.
+                                </p>
+                                <div style="color: var(--primary-color);">
+                                    <strong>Address:</strong><br>
+                                    PadelSport Headquarters<br>
+                                    123 Sports Lane<br>
+                                    Athletic City, AC 12345<br><br>
+                                    <strong>Hours:</strong> Mon-Fri 9AM-6PM, Sat 10AM-4PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Help Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title fade-in">Quick Help</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in">
+                        <div class="card-icon">❓</div>
+                        <h3 class="card-title">Frequently Asked Questions</h3>
+                        <div style="display: grid; gap: 1rem; margin-top: 1rem;">
+                            <details style="cursor: pointer;">
+                                <summary style="font-weight: 500; color: var(--text-dark); padding: 0.5rem 0;">
+                                    How do I find Padel courts near me?
+                                </summary>
+                                <p style="color: var(--text-light); padding-left: 1rem; margin-top: 0.5rem;">
+                                    Visit our <a href="clubs.html" style="color: var(--primary-color);">Clubs & Locations</a> page 
+                                    and use the search feature. You can also contact us directly for personalized recommendations.
+                                </p>
+                            </details>
+                            
+                            <details style="cursor: pointer;">
+                                <summary style="font-weight: 500; color: var(--text-dark); padding: 0.5rem 0;">
+                                    What equipment do I need to start playing?
+                                </summary>
+                                <p style="color: var(--text-light); padding-left: 1rem; margin-top: 0.5rem;">
+                                    Check out our comprehensive <a href="equipment.html" style="color: var(--primary-color);">Equipment Guide</a> 
+                                    for detailed recommendations based on your skill level and budget.
+                                </p>
+                            </details>
+                            
+                            <details style="cursor: pointer;">
+                                <summary style="font-weight: 500; color: var(--text-dark); padding: 0.5rem 0;">
+                                    Can complete beginners play Padel?
+                                </summary>
+                                <p style="color: var(--text-light); padding-left: 1rem; margin-top: 0.5rem;">
+                                    Absolutely! Padel is very beginner-friendly. Most clubs offer beginner sessions, 
+                                    and you can start enjoying the game from your very first lesson.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">🕒</div>
+                        <h3 class="card-title">Response Times</h3>
+                        <ul style="color: var(--text-light); line-height: 1.8; margin-top: 1rem;">
+                            <li><strong style="color: var(--text-dark);">Email Inquiries:</strong> 
+                                Within 24 hours during business days</li>
+                            <li><strong style="color: var(--text-dark);">Phone Calls:</strong> 
+                                Immediate response during business hours</li>
+                            <li><strong style="color: var(--text-dark);">Court Recommendations:</strong> 
+                                Same day response for urgent requests</li>
+                            <li><strong style="color: var(--text-dark);">Equipment Questions:</strong> 
+                                Within 2-4 hours during business days</li>
+                            <li><strong style="color: var(--text-dark);">Partnership Inquiries:</strong> 
+                                Within 48 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card-icon">💬</div>
+                        <h3 class="card-title">Live Chat Support</h3>
+                        <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                            For immediate assistance, our live chat is available during business hours. 
+                            Get instant answers to your Padel questions.
+                        </p>
+                        <button class="btn btn-primary" onclick="alert('Live chat feature coming soon!')">
+                            Start Live Chat
+                        </button>
+                        <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                            <strong>Available:</strong> Mon-Fri 9AM-6PM EST<br>
+                            <strong>Average Wait:</strong> Less than 2 minutes
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media & Community -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Connect With Our Community</h2>
+                
+                <div class="card-grid">
+                    <div class="card fade-in text-center">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📘</div>
+                        <h3 class="card-title">Facebook</h3>
+                        <p class="card-text">
+                            Join our Facebook community for daily Padel tips, court updates, and connect with players worldwide.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Follow Us</a>
+                    </div>
+                    
+                    <div class="card fade-in text-center">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📷</div>
+                        <h3 class="card-title">Instagram</h3>
+                        <p class="card-text">
+                            Follow us for stunning Padel photography, behind-the-scenes content, and daily inspiration.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Follow Us</a>
+                    </div>
+                    
+                    <div class="card fade-in text-center">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📺</div>
+                        <h3 class="card-title">YouTube</h3>
+                        <p class="card-text">
+                            Watch instructional videos, match highlights, and equipment reviews on our YouTube channel.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Subscribe</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;" class="fade-in">
+                    <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Stay Updated</h3>
+                    <p style="color: var(--text-light); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Subscribe to our newsletter for the latest Padel news, new court openings, 
+                        equipment releases, and exclusive community events.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; max-width: 400px; margin: 0 auto;">
+                        <input type="email" placeholder="Enter your email" class="form-input" style="flex: 1;">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map Placeholder -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title fade-in">Find Us</h2>
+                
+                <div class="card fade-in">
+                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
+                                height: 400px; border-radius: var(--border-radius); display: flex; 
+                                align-items: center; justify-content: center; color: var(--white); 
+                                flex-direction: column; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🗺️</div>
+                        <h3 style="margin-bottom: 1rem;">Interactive Map</h3>
+                        <p style="opacity: 0.9; max-width: 400px;">
+                            Our location in Athletic City with nearby Padel courts, parking, 
+                            and public transportation options.
+                        </p>
+                        <button class="btn" style="background: var(--white); color: var(--primary-color); margin-top: 1rem;"
+                                onclick="alert('Interactive map feature coming soon!')">
+                            View Full Map
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PadelSport</h3>
+                    <p>Your gateway to the exciting world of Padel. Discover courts, equipment, and join the global Padel community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Padel</a>
+                    <a href="equipment.html">Equipment Guide</a>
+                    <a href="clubs.html">Find Courts</a>
+                    <a href="gallery.html">Photo Gallery</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#">Rules & Regulations</a>
+                    <a href="#">Training Tips</a>
+                    <a href="#">Tournament Calendar</a>
+                    <a href="#">Coaching Directory</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@padelsport.com</p>
+                    <p>📞 +1 (555) 123-PADEL</p>
+                    <p>📍 123 Sports Lane<br>Athletic City, AC 12345</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PadelSport. All rights reserved. | Designed with ❤️ for Padel enthusiasts worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

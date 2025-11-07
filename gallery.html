@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Photo Gallery - Courts, Players & Action Shots | PadelSport</title>
+    <meta name="description" content="Explore our Padel photo gallery featuring beautiful courts, exciting gameplay, tournaments, and the vibrant Padel community in action.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PadelSport</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Padel</a></li>
+                <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+                <li><a href="clubs.html" class="nav-link">Clubs & Locations</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1 class="hero-title">Padel Gallery</h1>
+                    <p class="hero-subtitle">
+                        Experience the energy, passion, and beauty of Padel through our curated collection 
+                        of photos showcasing courts, players, and memorable moments.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filter Section -->
+        <section class="section" style="background-color: var(--light-gray); padding: 40px 0;">
+            <div class="container">
+                <div class="fade-in" style="text-align: center;">
+                    <h3 style="margin-bottom: 2rem; color: var(--text-dark);">Browse by Category</h3>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+                        <button class="gallery-filter active" data-filter="all" 
+                                style="padding: 10px 20px; border: 2px solid var(--primary-color); 
+                                       background: var(--primary-color); color: var(--white); 
+                                       border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">
+                            All Photos
+                        </button>
+                        <button class="gallery-filter" data-filter="courts" 
+                                style="padding: 10px 20px; border: 2px solid var(--primary-color); 
+                                       background: transparent; color: var(--primary-color); 
+                                       border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">
+                            Courts & Facilities
+                        </button>
+                        <button class="gallery-filter" data-filter="action" 
+                                style="padding: 10px 20px; border: 2px solid var(--primary-color); 
+                                       background: transparent; color: var(--primary-color); 
+                                       border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">
+                            Action Shots
+                        </button>
+                        <button class="gallery-filter" data-filter="tournaments" 
+                                style="padding: 10px 20px; border: 2px solid var(--primary-color); 
+                                       background: transparent; color: var(--primary-color); 
+                                       border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">
+                            Tournaments
+                        </button>
+                        <button class="gallery-filter" data-filter="community" 
+                                style="padding: 10px 20px; border: 2px solid var(--primary-color); 
+                                       background: transparent; color: var(--primary-color); 
+                                       border-radius: var(--border-radius); cursor: pointer; transition: var(--transition);">
+                            Community
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Gallery Section -->
+        <section class="section">
+            <div class="container">
+                <div class="gallery-grid" id="galleryGrid">
+                    
+                    <!-- Courts & Facilities -->
+                    <div class="gallery-item fade-in" data-category="courts">
+                        <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏟️</div>
+                            <h3>Premium Indoor Court</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">State-of-the-art facility with climate control</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Metro Padel Center</h4>
+                                <p>Premium indoor courts with professional lighting</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="courts">
+                        <div style="background: linear-gradient(45deg, var(--secondary-color), var(--accent-color)); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🌞</div>
+                            <h3>Outdoor Paradise</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Beautiful outdoor courts with mountain views</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Sunshine Padel Resort</h4>
+                                <p>Scenic outdoor courts with natural lighting</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="courts">
+                        <div style="background: linear-gradient(90deg, var(--accent-color), var(--primary-color)); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏢</div>
+                            <h3>Elite Training Center</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Professional training facilities</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Elite Padel Academy</h4>
+                                <p>World-class training environment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Shots -->
+                    <div class="gallery-item fade-in" data-category="action">
+                        <div style="background: linear-gradient(135deg, #e74c3c, #f39c12); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">⚡</div>
+                            <h3>Power Smash</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Intense moment during competitive play</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Championship Winning Shot</h4>
+                                <p>The decisive moment in the finals</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="action">
+                        <div style="background: linear-gradient(45deg, #9b59b6, #3498db); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎾</div>
+                            <h3>Perfect Rally</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Extended rally showcasing skill and strategy</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>25-Shot Rally</h4>
+                                <p>Amazing display of endurance and technique</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="action">
+                        <div style="background: linear-gradient(90deg, #1abc9c, #27ae60); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏃</div>
+                            <h3>Athletic Movement</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Dynamic player positioning and agility</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Professional Agility</h4>
+                                <p>Incredible court coverage and reflexes</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tournament Photos -->
+                    <div class="gallery-item fade-in" data-category="tournaments">
+                        <div style="background: linear-gradient(135deg, #f1c40f, #e67e22); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏆</div>
+                            <h3>Championship Trophy</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Annual tournament winners</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Regional Champions 2024</h4>
+                                <p>Celebrating tournament victory</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="tournaments">
+                        <div style="background: linear-gradient(45deg, #8e44ad, #2c3e50); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">👥</div>
+                            <h3>Professional Match</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">High-level competitive play</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Pro Tournament Finals</h4>
+                                <p>Elite players competing at the highest level</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="tournaments">
+                        <div style="background: linear-gradient(90deg, #e74c3c, #c0392b); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎯</div>
+                            <h3>Intense Competition</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Focused tournament atmosphere</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Semi-Final Pressure</h4>
+                                <p>Players giving their all in crucial match</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Photos -->
+                    <div class="gallery-item fade-in" data-category="community">
+                        <div style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">👨‍👩‍👧‍👦</div>
+                            <h3>Family Fun Day</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">All ages enjoying Padel together</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Community Event</h4>
+                                <p>Families and friends playing together</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="community">
+                        <div style="background: linear-gradient(45deg, #16a085, #27ae60); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎓</div>
+                            <h3>Beginner Clinic</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Learning the basics with expert coaching</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Weekend Clinic</h4>
+                                <p>New players learning fundamental techniques</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="community">
+                        <div style="background: linear-gradient(90deg, #f39c12, #d35400); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🥳</div>
+                            <h3>Social Mixer</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Club members socializing after games</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Monthly Social Event</h4>
+                                <p>Building friendships through Padel</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- More Action Photos -->
+                    <div class="gallery-item fade-in" data-category="action">
+                        <div style="background: linear-gradient(135deg, #2980b9, #8e44ad); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎪</div>
+                            <h3>Wall Play Magic</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Creative shots using court walls</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Incredible Angle Shot</h4>
+                                <p>Using walls for strategic advantage</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Court Photos -->
+                    <div class="gallery-item fade-in" data-category="courts">
+                        <div style="background: linear-gradient(135deg, #34495e, #2c3e50); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🌙</div>
+                            <h3>Night Session</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Evening play under floodlights</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Evening Matches</h4>
+                                <p>Perfect lighting for night play</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="community">
+                        <div style="background: linear-gradient(45deg, #e91e63, #9c27b0); 
+                                    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; 
+                                    flex-direction: column; color: var(--white); font-size: 1.2rem; text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">👯‍♀️</div>
+                            <h3>Women's League</h3>
+                            <p style="opacity: 0.9; margin-top: 0.5rem;">Competitive women's tournament</p>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div style="text-align: center;">
+                                <h4>Ladies Championship</h4>
+                                <p>Inspiring female athletes competing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Statistics Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title fade-in">Capturing Padel Moments</h2>
+                
+                <div class="card-grid">
+                    <div class="card text-center fade-in">
+                        <div style="font-size: 3rem; font-weight: bold; color: var(--primary-color); margin-bottom: 1rem;">500+</div>
+                        <h3 class="card-title">Photos Captured</h3>
+                        <p class="card-text">From courts around the world showcasing the beauty and excitement of Padel</p>
+                    </div>
+                    
+                    <div class="card text-center fade-in">
+                        <div style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin-bottom: 1rem;">50+</div>
+                        <h3 class="card-title">Venues Featured</h3>
+                        <p class="card-text">Different clubs and courts from beginner-friendly to professional level</p>
+                    </div>
+                    
+                    <div class="card text-center fade-in">
+                        <div style="font-size: 3rem; font-weight: bold; color: var(--accent-color); margin-bottom: 1rem;">200+</div>
+                        <h3 class="card-title">Players Photographed</h3>
+                        <p class="card-text">From beginners taking their first shot to professionals in competition</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Photos Section -->
+        <section class="section">
+            <div class="container">
+                <div class="card fade-in" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 2rem; font-size: 4rem;">📸</div>
+                    <h2 style="color: var(--text-dark); margin-bottom: 1.5rem;">Share Your Padel Moments</h2>
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Have amazing Padel photos to share? We'd love to feature your shots in our gallery! 
+                        Whether it's action shots, beautiful courts, or community events, help us showcase 
+                        the worldwide Padel community.
+                    </p>
+                    
+                    <div style="background: var(--light-gray); padding: 2rem; border-radius: var(--border-radius); margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Submission Guidelines</h3>
+                        <ul style="color: var(--text-light); text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.8;">
+                            <li>• High resolution images (minimum 1200px wide)</li>
+                            <li>• Include location and brief description</li>
+                            <li>• Ensure you have permission from people in photos</li>
+                            <li>• Original photos only (no screenshots or copies)</li>
+                            <li>• Family-friendly content only</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary">Submit Photos</a>
+                        <a href="mailto:photos@padelsport.com" class="btn btn-outline">Email Photos Directly</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+            <div class="container">
+                <div class="text-center fade-in" style="color: var(--white);">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Inspired to Play?</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        See yourself in these photos? Find a court near you and start creating your own Padel memories today!
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="clubs.html" class="btn" style="background-color: var(--white); color: var(--primary-color);">Find Courts Near You</a>
+                        <a href="contact.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Get Started Today</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PadelSport</h3>
+                    <p>Your gateway to the exciting world of Padel. Discover courts, equipment, and join the global Padel community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Padel</a>
+                    <a href="equipment.html">Equipment Guide</a>
+                    <a href="clubs.html">Find Courts</a>
+                    <a href="gallery.html">Photo Gallery</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#">Rules & Regulations</a>
+                    <a href="#">Training Tips</a>
+                    <a href="#">Tournament Calendar</a>
+                    <a href="#">Coaching Directory</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 info@padelsport.com</p>
+                    <p>📞 +1 (555) 123-PADEL</p>
+                    <p>📍 123 Sports Lane<br>Athletic City, AC 12345</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PadelSport. All rights reserved. | Designed with ❤️ for Padel enthusiasts worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
