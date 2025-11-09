@@ -1,7 +1,9 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-    --primary-color: #6fb3db;      /* Soft blue */
-    --secondary-color: #a8d5a8;    /* Pastel green */
+    --primary-color: #56D7D7;      /* Soft blue */
+    --secondary-color: #3EA7C1;    /* Pastel green */
+    /*--primary-color: #6fb3db;      /* Soft blue */
+    /*--secondary-color: #a8d5a8;    /* Pastel green */
     --accent-color: #4a90b8;       /* Darker blue for accents */
     --text-dark: #2c3e50;          /* Dark gray */
     --text-light: #7f8c8d;         /* Light gray */
@@ -469,6 +471,7 @@ ul {
 
 .social-links {
     display: flex;
+    justify-content: flex-start;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -479,7 +482,7 @@ ul {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     transition: var(--transition);
 }
@@ -548,6 +551,10 @@ ul {
 
     .section {
         padding: 60px 0;
+    }
+
+    .social-links {
+        justify-content: center; 
     }
 }
 
