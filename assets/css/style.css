@@ -1,7 +1,9 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-    --primary-color: #6fb3db;      /* Soft blue */
-    --secondary-color: #a8d5a8;    /* Pastel green */
+    --primary-color: #56D7D7;      /* Soft blue */
+    --secondary-color: #3EA7C1;    /* Pastel green */
+    /*--primary-color: #6fb3db;      /* Soft blue */
+    /*--secondary-color: #a8d5a8;    /* Pastel green */
     --accent-color: #4a90b8;       /* Darker blue for accents */
     --text-dark: #2c3e50;          /* Dark gray */
     --text-light: #7f8c8d;         /* Light gray */
@@ -12,6 +14,8 @@
     --border-radius: 12px;
     --transition: all 0.3s ease;
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --logo-color: #f0f0f0; 
+    --icon-size: 60px;
 }
 
 /* ===== RESET & BASE STYLES ===== */
@@ -106,15 +110,15 @@ ul {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--logo-color);
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.logo::before {
-    content: "🏓";
-    font-size: 1.5rem;
+.logo-icon {
+    height: var(--icon-size);
+    width: auto;
 }
 
 .nav-menu {
@@ -467,6 +471,7 @@ ul {
 
 .social-links {
     display: flex;
+    justify-content: flex-start;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -477,7 +482,7 @@ ul {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     transition: var(--transition);
 }
@@ -546,6 +551,10 @@ ul {
 
     .section {
         padding: 60px 0;
+    }
+
+    .social-links {
+        justify-content: center; 
     }
 }
 
