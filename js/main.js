@@ -552,3 +552,44 @@ if (typeof module !== 'undefined' && module.exports) {
         throttle
     };
 }
+
+// Menunggu sampai seluruh halaman HTML selesai dimuat
+document.addEventListener("DOMContentLoaded", function() {
+
+    // 1. Ambil elemen-elemen yang kita butuhkan berdasarkan ID
+    const searchButton = document.getElementById("searchButton");
+    const cityInput = document.getElementById("cityInput");
+    const courtTypeSelect = document.getElementById("courtTypeSelect");
+
+    // 2. Tambahkan "event listener" pada tombol search
+    // Kode di dalam ini akan berjalan setiap kali tombol di-klik
+    searchButton.addEventListener("click", function(event) {
+        
+        // 3. Mencegah form melakukan refresh halaman (perilaku default)
+        event.preventDefault(); 
+
+        // 4. Ambil nilai (value) dari setiap input
+        const city = cityInput.value.trim(); // .trim() untuk hapus spasi
+        const courtType = courtTypeSelect.value;
+
+        // 5. Validasi: Pastikan kota sudah diisi
+        if (city === "") {
+            alert("Silakan masukkan nama kota terlebih dahulu.");
+            return; // Hentikan eksekusi fungsi
+        }
+
+        // 6. Buat kueri pencarian
+        // Contoh: "Padel Indoor Jakarta" atau "Padel Outdoor Bandung"
+        // Jika courtType tidak dipilih (value=""), kuerinya jadi "Padel Jakarta"
+        let searchQuery = "Padel " + courtType + " " + city;
+        
+        // 7. Buat URL Google Maps
+        const mapsBaseUrl = "https://www.google.com/maps/search/";
+        const mapsUrl = mapsBaseUrl + encodeURIComponent(searchQuery.trim());
+        // encodeURIComponent akan mengubah "Padel Indoor Jakarta" 
+        // menjadi "Padel%20Indoor%20Jakarta" agar aman untuk URL
+
+        // 8. Buka URL di tab browser baru
+        window.open(mapsUrl, "_blank");
+    });
+});

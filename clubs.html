@@ -49,38 +49,30 @@
 
         <!-- Search Section -->
         <section class="section" style="background-color: var(--light-gray);">
-            <div class="container">
-                <div class="card fade-in" style="max-width: 600px; margin: 0 auto;">
-                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">
-                        Find Courts Near You
-                    </h3>
-                    <form style="display: grid; gap: 1rem;">
-                        <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Enter your city or zip code" 
-                                   style="text-align: center; font-size: 1.1rem;">
-                        </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <select class="form-input">
-                                <option value="">Court Type</option>
-                                <option value="indoor">Indoor Courts</option>
-                                <option value="outdoor">Outdoor Courts</option>
-                                <option value="both">Both</option>
-                            </select>
-                            <select class="form-input">
-                                <option value="">Distance</option>
-                                <option value="5">Within 5 miles</option>
-                                <option value="10">Within 10 miles</option>
-                                <option value="25">Within 25 miles</option>
-                                <option value="50">Within 50 miles</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="justify-self: center; padding: 12px 40px;">
-                            🔍 Search Courts
-                        </button>
-                    </form>
+    <div class="container">
+        <div class="card fade-in" style="max-width: 600px; margin: 0 auto;">
+            <h3 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">
+                Find Courts Near You
+            </h3>
+            <form style="display: grid; gap: 1rem;">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Enter your city" 
+                           style="text-align: center; font-size: 1.1rem;"
+                           id="cityInput"> </div>
+                <div style="display: grid; gap: 1rem;">
+                    <select class="form-input" id="courtTypeSelect"> <option value="">Court Type</option>
+                        <option value="indoor">Indoor Courts</option>
+                        <option value="outdoor">Outdoor Courts</option>
+                        <option value="both">Both</option>
+                    </select>
                 </div>
-            </div>
-        </section>
+                <button type="submit" class="btn btn-primary" style="justify-self: center; padding: 12px 40px;"
+                        id="searchButton"> 🔍 Search Courts
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
 
         <!-- Featured Clubs Section -->
         <section class="section">
